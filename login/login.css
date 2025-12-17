@@ -7,7 +7,6 @@
 .sign-img-cont {
     background-image: url(./backimg.png);
     background-size: cover;
-    background-position: top;
     position: relative;
 }
 .cont {
@@ -16,8 +15,13 @@
     flex-wrap: nowrap;
 }
 .sign-in-cont, .sign-img-cont {
-    width: 50%;
     height: 100vh;
+}
+.sign-in-cont {
+    width: 40%;
+}
+.sign-img-cont {
+    width: 60%;
 }
 .container-rev {
     width: 80%;
@@ -63,7 +67,7 @@ img.logo-img {
     align-items: center;
 }
 .sign-in {
-    width: 65%;
+    width: 78%;
     margin: auto;
     gap: 28px;
     display: flex;
@@ -81,14 +85,14 @@ p.subtitle {
 button.google-btn {
     background-color: transparent;
     border: 1px solid #E6E8E7;
-    border-radius: 10px;
+    border-radius: 6px;
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding: 8px;
-    font-size: 16px;
+    padding: 6px;
+    font-size: 14px;
     font-weight: 500;
 }
 .google-btn img {
@@ -96,7 +100,7 @@ button.google-btn {
 }
 .or-cont p {
     color: #6E6E6E;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .or-cont {
@@ -108,18 +112,30 @@ button.google-btn {
 .or-line {
     width: 43%;
     background-color: #E6E8E7;
-    height: 1px;
+    height: 0.5px;
 }
 input {
     display: block;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 12px;
     width: 100%;
-    padding: 10px 16px;
+    padding: 8px 12px;
     border: 1px solid #E6E8E7;
-    border-radius: 10px;
+    border-radius: 6px;
     font-size: 14px;
     color: #232323;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.button.google-btn {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.google-btn img, .google-btn p {
+    cursor: pointer;
+}
+input:hover, .google-btn:hover {
+    border: 1px solid #cecfce;
 }
 label {
     color: #9A9A9A;
@@ -127,13 +143,19 @@ label {
 }
 button.sign-in-btn {
     width: 100%;
-    background-color: #367AFF;
-    padding: 10px 16px;
+    background-color: #367affc7;
+    padding: 10px 12px;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     color: white;
     font-size: 16px;
     font-weight: 500;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.sign-in-btn:hover {
+    background-color: #367aff;
 }
 p.cta {
     font-size: 14px;
@@ -146,3 +168,40 @@ p.cta {
 }
 
 
+@media screen and (max-width: 1280px) {
+    .sign-img-cont {
+        display: none;
+    }
+    .sign-in-cont {
+        width: 100%;
+    }
+    .sign-in {
+        width: 385px;
+        gap: 22px;
+    }
+    img.logo-img {
+        left: 35px;
+        top: 28px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p.subtitle {
+        font-size: 13px;
+    }
+    p.cta {
+    font-size: 13px;
+    }
+    img.logo-img {
+    width: 132px;
+    }
+}
+@media screen and (max-width: 645px) {
+    .sign-in {
+        width: 82%;
+        gap: 32px;
+    }
+        img.logo-img {
+        width: 124px;
+    }
+}

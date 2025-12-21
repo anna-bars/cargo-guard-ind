@@ -16,12 +16,20 @@
                 <div class="toolbar">
                     <a href="#"><img src="./logo.svg" alt=""></a>
                 </div>
-                <nav>
-                        <a href="#">Why Cargo Guard</a>
-                        <a href="#">How It Works</a>
-                        <a href="#">Results</a>
-                        <a href="#">Platform</a>
-                    </nav>
+                
+                <!-- Hamburger Button for Mobile -->
+                <button class="hamburger" id="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <nav id="main-nav">
+                    <a href="#">Why Cargo Guard</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Results</a>
+                    <a href="#">Platform</a>
+                </nav>
                 <div class="toolbar-cont">
                     <div class="btn-cont">
                         <button class="login-btn">Login</button>
@@ -29,6 +37,23 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Mobile Menu (Hidden by default) -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <div class="mobile-nav">
+                        <a href="#">Why Cargo Guard</a>
+                        <a href="#">How It Works</a>
+                        <a href="#">Results</a>
+                        <a href="#">Platform</a>
+                    </div>
+                    <div class="mobile-buttons">
+                        <button class="login-btn">Login</button>
+                        <button class="sign-up">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            
             <div class="hero-sect">
                 <div class="header">
                     <div class="flash">
@@ -53,5 +78,7 @@
         </div>
         <img class="hero-mob-img" src="./mob-dash.png" alt="">
     </header>
+    
+    <script src="./script.js"></script>
 </body>
 </html>

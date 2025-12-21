@@ -170,7 +170,7 @@ img.hero-img {
         display: none !important;
     }
     h1 {
-        width: 94%;
+        width: 96%;
         font-size: 28px;
         line-height: 36px;
     }
@@ -189,6 +189,9 @@ img.hero-img {
     }
     .subtitle {
         width: 90%;
+    }
+    .container {
+        width: 92%;
     }
 }
 @media screen and (max-width: 425px){

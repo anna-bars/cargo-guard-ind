@@ -26,6 +26,10 @@ nav a {
     font-size: 14px;
     color: #535C65;
     text-decoration: none;
+    transition: all 0.25s ease-in;
+}
+nav a:hover {
+    color: #163e66 !important;
 }
 nav {
     display: flex;
@@ -39,6 +43,11 @@ button.sign-up {
     border-radius: 6px;
     font-size: 14px;
     border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+button.sign-up:hover {
+    background-color: #191b1c;
 }
 .login-btn {
     color: #2a2a2a;
@@ -47,6 +56,12 @@ button.sign-up {
     border-radius: 6px;
     font-size: 14px;
     border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+    border-radius: 0;
+}
+.login-btn:hover {
+    color: #0a0891 !important;
 }
 .btn-cont {
     display: flex;
@@ -99,6 +114,11 @@ button.first {
     padding: 6px 0;
     font-size: 16px;
     color: #2F2F2F;
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+button.first:hover {
+    color: #2563eb !important;
 }
 button.main {
     background-color: #2563EB;
@@ -107,6 +127,11 @@ button.main {
     border-radius: 6px;
     color: #FAFAFA;
     font-size: 16px;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+button.main:hover {
+    background-color: #043fc1 !important;
 }
 .header {
     display: flex;

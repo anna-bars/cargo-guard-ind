@@ -679,6 +679,16 @@ section.features {
     border-radius: 16px;
     padding: 16px;
     align-items: start;
+    transition: all 0.25s ease-in;
+}
+.feat-it:hover {
+    transform: translateY(-4px);
+}
+.new-way .feat-it:hover {
+    background-color: #eafff1;
+}
+.old-way .feat-it:hover {
+    background-color: #fcecec;
 }
 .feat-it-text h4 {
     color: #2F2F2F;

@@ -784,9 +784,7 @@ p.process-header-subtitle {
 }
 .process-item {
     width: 32.5%;
-    /* padding: 24px; */
     border-radius: 16px;
-    /* background-color: #f9f9f9; */
 }
 .process-item-cont {
     margin-top: 18px;
@@ -844,9 +842,135 @@ section.process {
     }
 }
 
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
 
 
-
+.perform {
+    padding-bottom: 72px;
+}
+.perform-title {
+    font-size: 32px;
+    color: #4C4C4C;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.perform-subtitle {
+    color: #4C4C4C;
+    font-size: 16px;
+    width: 37%;
+}
+.perform-header {
+    margin-bottom: 46px;
+}
+.perform-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.perform-item {
+    width: 49.8%;
+    background-color: #F9F9F9;
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+}
+.count {
+    color: #2F2F2F;
+    font-size: 48px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.count span {
+    color: #B2B2B2;
+}
+.perform-item p {
+    color: #AFAFAF;
+    font-size: 14px;
+    font-weight: 300;
+}
+.count::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url(./perform/percent.svg);
+    background-repeat: no-repeat;
+    top: 17px;
+    left: -16px;
+}
+.count::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url(./perform/arrow.svg);
+    background-repeat: no-repeat;
+    top: 17px;
+    right: -24px;
+}
+.review {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.rev-person img {
+    width: 44px;
+}
+.rev-person {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.rev-person-info h3 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+}
+.rev-person-info h4 {
+    font-size: 13px;
+    color: #AFAFAF;
+    font-weight: 400;
+}
+.perform-item.review-perform-item {
+    padding: 24px 40px !important;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.perform-cta {
+    padding-top: 28px;
+    text-align: center;
+}
+.perform-cta button {
+    color: #FAFAFA;
+    background-color: blue;
+    border: none;
+    padding: 6px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.perform-cta p {
+    color: #878787;
+    font-size: 12px;
+}
 
 
 

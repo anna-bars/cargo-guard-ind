@@ -648,6 +648,7 @@ section.features {
     gap: 22px;
     border: 1px solid #ffffff;
     box-shadow: 0px 0px 2px #0000ff1a;
+    background-color: #fcfcfc;
 }
 .features-item-cont {
     display: flex;
@@ -681,6 +682,7 @@ section.features {
     align-items: start;
     transition: all 0.25s ease-in;
     border: 1px solid #0000001f;
+    background-color: #ffffff;
 }
 .feat-it:hover {
     transform: translateY(-4px);
@@ -749,6 +751,96 @@ section.features {
     }
     .feat-it img {
         width: 16px;
+    }
+}
+
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+/* 🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹🍹 */
+
+
+.process-header-title {
+    color: #4C4C4C;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-bottom: 8px;
+}
+p.process-header-subtitle {
+    font-size: 16px;
+    color: #4C4C4C;
+}
+.process-header {
+    margin-bottom: 46px;
+}
+.process-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.process-item {
+    width: 32.5%;
+    /* padding: 24px; */
+    border-radius: 16px;
+    /* background-color: #f9f9f9; */
+}
+.process-item-cont {
+    margin-top: 18px;
+}
+h3.process-item-title {
+    color: #2F2F2F;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.process-item-text {
+    color: #848484;
+    font-size: 16px;
+    font-weight: 300;
+    width: 75%;
+}
+section.process {
+    padding-bottom: 72px;
+}
+@media screen and (max-width: 1024px){
+    .process-cont {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .process-item {
+        width: 49.5%;
+    }
+    .process-item:nth-child(3) {
+        margin-top: 46px;
+    }
+    .process-header-title {
+        font-size: 28px;
+        line-height: normal;
+        margin-bottom: 8px;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .process-item {
+        width: 100%;
+        margin-top: 44px;
+    }
+    .process-item:nth-child(1) {
+        margin-top: 0 !important;
+    }
+    .process-item-text {
+        width: 85%;
+    }
+    .process-header-title {
+        font-size: 24px;
+        width: 72%;
+    }
+    p.process-header-subtitle {
+        width: 80%;
     }
 }
 

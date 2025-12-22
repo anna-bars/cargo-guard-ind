@@ -236,7 +236,55 @@ img.hero-img {
 .hamburger.active .hamburger-line:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
-/* Mobile Menu Styles - FADE IN VERSION */
+/* Mobile Close Button (X) Styles */
+.mobile-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu.active .mobile-close-btn {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.3s;
+}
+
+.close-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4C4C4C;
+    border-radius: 2px;
+}
+
+.close-line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close-line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.close-line {
+    transition: background-color 0.2s ease;
+}
+
+.mobile-close-btn:hover .close-line {
+    background-color: #2563EB;
+}
+/* Mobile Menu Styles - FAST FADE IN VERSION */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -246,9 +294,8 @@ img.hero-img {
     background-color: #FBFBFF;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease; /* Changed from 0.3s to 0.2s */
     z-index: 999;
-    padding-top: 80px;
     display: none;
     overflow-y: auto;
 }
@@ -259,24 +306,67 @@ img.hero-img {
 }
 
 .mobile-menu-content {
-    padding: 0 24px;
+    padding: 80px 24px 40px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(10px); /* Reduced from 20px */
+    transition: opacity 0.25s ease, transform 0.25s ease; /* Faster */
+    position: relative;
+    height: 100%;
 }
 
 .mobile-menu.active .mobile-menu-content {
     opacity: 1;
     transform: translateY(0);
+    transition-delay: 0.05s; /* Reduced delay */
 }
 
-.mobile-nav {
+/* Mobile Close Button (X) Styles */
+.mobile-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.15s ease, transform 0.15s ease; /* Faster */
+}
+
+.mobile-menu.active .mobile-close-btn {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.1s; /* Reduced from 0.3s */
+}
+
+.close-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4C4C4C;
+    border-radius: 2px;
+    transition: background-color 0.15s ease; /* Faster */
+}
+
+.close-line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close-line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.mobile-close-btn:hover .close-line {
+    background-color: #2563EB;
 }
 
 .nav-item {
@@ -287,25 +377,26 @@ img.hero-img {
     font-weight: 500;
     border-bottom: 1px solid #eee;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, color 0.2s ease;
+    transform: translateY(8px); /* Reduced from 10px */
+    transition: opacity 0.2s ease, transform 0.1s ease, color 0.15s ease; /* Faster */
+    display: block;
 }
 
-/* Staggered animation for nav items */
+/* FASTER staggered animation for nav items */
 .mobile-menu.active .nav-item:nth-child(1) {
-    animation: fadeInUp 0.4s ease 0.1s forwards;
+    animation: fadeInUp 0.25s ease 0.05s forwards; /* Faster animations */
 }
 
 .mobile-menu.active .nav-item:nth-child(2) {
-    animation: fadeInUp 0.4s ease 0.2s forwards;
+    animation: fadeInUp 0.25s ease 0.1s forwards;
 }
 
 .mobile-menu.active .nav-item:nth-child(3) {
-    animation: fadeInUp 0.4s ease 0.3s forwards;
+    animation: fadeInUp 0.25s ease 0.15s forwards;
 }
 
 .mobile-menu.active .nav-item:nth-child(4) {
-    animation: fadeInUp 0.4s ease 0.4s forwards;
+    animation: fadeInUp 0.25s ease 0.2s forwards;
 }
 
 .nav-item:hover {
@@ -318,8 +409,8 @@ img.hero-img {
     gap: 16px;
     margin-top: 40px;
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease 0.5s, transform 0.4s ease 0.5s;
+    transform: translateY(10px); /* Reduced from 20px */
+    transition: opacity 0.25s ease 0.25s, transform 0.25s ease 0.25s; /* Faster with less delay */
 }
 
 .mobile-menu.active .mobile-buttons {
@@ -334,11 +425,11 @@ img.hero-img {
     border-radius: 8px;
 }
 
-/* Animation keyframes */
+/* FASTER Animation keyframes */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(8px); /* Reduced from 10px */
     }
     to {
         opacity: 1;
@@ -351,16 +442,93 @@ body.menu-open {
     overflow: hidden;
 }
 
-/* Toolbar fade out effect */
+/* Toolbar fade out effect - FASTER */
 .tb {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.15s ease; /* Faster */
 }
 
 body.menu-open .tb {
     opacity: 0.3;
+    pointer-events: none;
 }
 
-/* Media Queries - update existing ones */
+/* Hamburger icon - hide when menu is open */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+    transition: opacity 0.15s ease; /* Added for faster fade */
+}
+
+.hamburger-line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #4C4C4C;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out; /* Faster */
+}
+
+/* Hamburger Animation when active - FASTER */
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 1001;
+    }
+    .nav-item {
+        font-size: 16px;
+    }
+    .mobile-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #0f0f0f;
+        flex-direction: row;
+    }
+    button.sign-up {
+        background-color: #2196F3;
+    }
+    .login-btn {
+        color: #2a2a2a;
+        background-color: #ffffff;
+    }
+    .mobile-buttons button {
+        width: 49.5%;
+        font-size: 14px;
+    }
+    /* Hide hamburger when menu is open - FASTER */
+    body.menu-open .hamburger {
+        opacity: 0;
+        pointer-events: none;
+        transition-delay: 0s; /* No delay */
+    }
+}
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
     .hero-img {
         display: none !important;
@@ -370,23 +538,14 @@ body.menu-open .tb {
         width: 96%;
     }
     
-    /* Hide desktop nav and show hamburger */
     nav {
         display: none !important;
     }
     
-    .hamburger {
-        display: flex;
-        position: relative;
-        z-index: 1001; /* Ensure it's above menu */
-    }
-    
-    /* Hide desktop buttons */
     .toolbar-cont {
         display: none;
     }
     
-    /* Show mobile menu */
     .mobile-menu {
         display: block;
     }

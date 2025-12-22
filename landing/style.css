@@ -641,7 +641,6 @@ section.features {
 }
 .old-way, .new-way {
     width: 49.5%;
-    background-color: #fdfdfd;;
     border-radius: 16px;
     padding: 24px;
     display: flex;
@@ -658,28 +657,30 @@ section.features {
 .old-way .features-item-header-title {
     font-weight: 400;
     font-size: 24px;
-    color: #B45353;
+    color: #2c2c2c;
 }
 .new-way .features-item-header-title {
     font-weight: 400;
     font-size: 24px;
-    color: #53B475;
+    color: #000000;
 }
 .features-item-header-subtitle {
     font-size: 16px;
-    color: #AFAFAF;
+    color: #575757;
     font-weight: 300;
+}
+.old-way h4 {
+    color: #b45353 !important;
 }
 .feat-it {
     display: flex;
     justify-content: start;
     gap: 16px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 2px #0000ff1a;
     border-radius: 16px;
     padding: 16px;
     align-items: start;
     transition: all 0.25s ease-in;
+    border: 1px solid #0000001f;
 }
 .feat-it:hover {
     transform: translateY(-4px);
@@ -691,7 +692,7 @@ section.features {
     background-color: #fcecec;
 }
 .feat-it-text h4 {
-    color: #2F2F2F;
+    color: #53b475;
     font-weight: 400;
     font-size: 20px;
 }

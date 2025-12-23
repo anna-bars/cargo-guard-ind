@@ -38,7 +38,54 @@
                     <a href="#" class="nav-link">Documents</a>
                 </div>
             </nav>
+            <!-- Ավելացնել header-ի մեջ navigation-ից հետո -->
+<div class="hamburger-menu">
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+</div>
+
+<!-- Mobile Navigation Menu -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-container">
+        <div class="mobile-nav-header">
+            <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+                <span>×</span>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-search">
+                <input type="text" placeholder="Search...">
+                <img src="https://c.animaapp.com/mjiggi0jSqvoj5/img/search-interface-symbol-1.png" alt="Search">
+            </div>
             
+            <nav class="mobile-nav-links">
+                <a href="#" class="mobile-nav-link active">Dashboard</a>
+                <a href="#" class="mobile-nav-link">Quotes</a>
+                <a href="#" class="mobile-nav-link">Shipments</a>
+                <a href="#" class="mobile-nav-link">Documents</a>
+            </nav>
+            
+            <div class="mobile-nav-actions">
+                <button class="mobile-action-btn">
+                    <img src="https://c.animaapp.com/mjiggi0jSqvoj5/img/group-118-1.svg" alt="Quote">
+                    Get New Quote
+                </button>
+                <button class="mobile-action-btn">
+                    <img src="https://c.animaapp.com/mjiggi0jSqvoj5/img/upload-1.png" alt="Upload">
+                    Upload Document
+                </button>
+                <button class="mobile-action-btn">
+                    <img src="https://c.animaapp.com/mjiggi0jSqvoj5/img/upload-1-1.png" alt="Renew">
+                    Renew Policy
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
             <div class="header-actions">
                 <div class="notification-wrapper">
                     <div class="notification-icon">
@@ -486,5 +533,54 @@
             </div>
         </main>
     </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const body = document.body;
+
+    // Open mobile menu
+    hamburgerBtn.addEventListener('click', function() {
+        mobileNavOverlay.classList.add('active');
+        body.classList.add('menu-open');
+        hamburgerBtn.classList.add('active');
+    });
+
+    // Close mobile menu
+    mobileCloseBtn.addEventListener('click', function() {
+        mobileNavOverlay.classList.remove('active');
+        body.classList.remove('menu-open');
+        hamburgerBtn.classList.remove('active');
+    });
+
+    // Close menu when clicking outside
+    mobileNavOverlay.addEventListener('click', function(e) {
+        if (e.target === mobileNavOverlay) {
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            hamburgerBtn.classList.remove('active');
+        }
+    });
+
+    // Close menu with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileNavOverlay.classList.contains('active')) {
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            hamburgerBtn.classList.remove('active');
+        }
+    });
+
+    // Close menu when clicking on a nav link
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNavOverlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            hamburgerBtn.classList.remove('active');
+        });
+    });
+});
+</script>
 </body>
 </html>

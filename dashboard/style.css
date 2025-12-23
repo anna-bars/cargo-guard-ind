@@ -15,11 +15,11 @@ body {
 .container {
     max-width: 96%;
     margin: 0 auto;
-    padding: 24px 0 0 0;
+    padding: 16px 0 0 0;
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-template-rows: auto auto 1fr;
-    gap: 24px;
+    gap: 16px;
     min-height: 100vh;
 }
 
@@ -211,7 +211,7 @@ body {
     width: fit-content;
 }
 .metric-card-item {
-    width: 11%;
+    width: 12%;
 }
 .metric-value, .metric-value2 {
     font-family: 'Montserrat', sans-serif;
@@ -1084,4 +1084,146 @@ section.quote-conversion.performance-section {
     height: 3px;
     background: #f3f3f6;
 }
+/* Main Content Layout */
+.main-content {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 16px;
+    align-items: stretch;
+}
 
+/* Left column (75%) */
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Right column (25%) */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+/* Performance Section - Take full width of left column */
+.performance-section {
+    width: 100%;
+}
+
+/* Activity Section - Take full width of left column */
+.activity-section {
+    width: 100%;
+}
+
+/* Welcome Widget - Fit in right column */
+.welcome-widget {
+    width: 100%;
+}
+
+/* Action Center - Fit in right column */
+.action-center {
+    width: 100%;
+    height: 203px;
+}
+
+/* Quote Conversion Section - Fit in right column */
+.quote-conversion {
+    width: 100%;
+    height: auto;
+    min-height: 203px;
+}
+
+/* Adjust table layout for better fit */
+.activity-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-header, .table-row {
+    min-width: 100%;
+}
+
+/* Make sure metrics grid fits the container */
+.metrics-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+
+/* Adjust conversion chart for smaller width */
+.showing-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.showing-bar-metrics {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.shown-result {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Make sure right column items stack properly */
+.right > * {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .left, .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .metrics-grid {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .metric-card-item {
+        flex: 0 0 calc(33.333% - 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .metric-card-item {
+        flex: 0 0 calc(50% - 8px);
+    }
+    
+    .welcome-widget {
+        height: 350px;
+    }
+    
+    .action-center {
+        height: auto;
+        min-height: 180px;
+    }
+}
+
+/* Ensure all sections have proper spacing */
+.performance-section,
+.activity-section,
+.welcome-widget,
+.action-center,
+.quote-conversion {
+    margin-bottom: 0;
+}

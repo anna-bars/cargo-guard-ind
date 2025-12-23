@@ -948,7 +948,7 @@ section.process {
     font-weight: 400;
 }
 .perform-item.review-perform-item {
-    padding: 24px 40px !important;
+    padding: 24px 40px ;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -960,17 +960,86 @@ section.process {
 }
 .perform-cta button {
     color: #FAFAFA;
-    background-color: blue;
+    background-color: #2563EB;
     border: none;
     padding: 6px 24px;
     font-size: 16px;
     border-radius: 6px;
     margin-bottom: 8px;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+.perform-cta button:hover {
+    background-color: #043fc1 !important;
 }
 .perform-cta p {
     color: #878787;
     font-size: 12px;
 }
+@media screen and (max-width: 1280px) {
+    .perform-subtitle {
+        width: 56%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .perform-title {
+        font-size: 28px;
+    }
+    .review {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 768px) {
+    .perform-title {
+        font-size: 24px;
+    }
+    .perform-subtitle {
+        width: 100%;
+    }
+    .perform-cont {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .perform-item {
+        width: 100%;
+        padding: 25px;
+    }
+    .perform-item.review-perform-item {
+    padding: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

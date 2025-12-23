@@ -1173,3 +1173,221 @@ section.quote-conversion.performance-section {
 .quote-conversion {
     margin-bottom: 0;
 }
+@media screen and (max-width: 1336px){
+    .activity-header {
+    display: block;
+    }
+    .activity-filters {
+    justify-content: flex-end;
+    }
+    .action-content {
+
+    display: block;
+    height: 100%;
+}
+.action-subtitle {
+    max-width: 100%;
+}
+.action-center {
+    height: 254px;
+}
+.action-bg {
+    top: 0;
+}
+
+.action-buttons {
+    max-width: 100%;
+}
+.welcome-widget {
+    height: 352px;
+}
+.cta-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.64px;
+    max-width: 224px;
+}
+}
+@media screen and (max-width: 1280px){
+    .right {
+    display: flex;
+    flex-direction: row;
+    }
+    .action-center {
+        height: 100%;
+        width: 40%;
+    }
+    .action-bg {
+    width: 840px;
+    height: 328px !important;
+}
+
+.welcome-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.welcome-subtitle {
+    max-width: 100%;
+    font-size: 12px;
+}
+    .cta-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+section.quote-conversion.performance-section {
+    width: 36%;
+    position: relative;
+}
+    .main-content {
+        grid-template-columns: 100% !important;
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+.navigation {
+    display: none;
+}
+
+.welcome-widget {
+        height: 260px;
+        width: 36%;
+    }
+.showin-result-ittle-info {
+    display: none;
+}
+
+section.quote-conversion.performance-section {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (max-width: 1024px){
+
+    aside.welcome-widget, aside.action-center {
+    display: none;
+}
+section.quote-conversion.performance-section {
+    width: 100%;
+    min-height: 195px;
+}
+.action-title, .section-title {
+    font-size: 16px;
+}
+.action-subtitle {
+    margin-bottom: 0px;
+}
+.metrics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-left: 20px;
+}
+.metric-card-item {
+    width: 43%;
+}
+.section-header {
+    align-items: center;
+}
+.activity-header {
+    display: none;
+}
+.table-header {
+    display: none;
+}
+.activity-table {
+    margin-top: 0px;
+}
+    .table-row {
+        min-width: 100%;
+        display: flex;
+        background-color: rgba(250, 252, 255, 0.8);
+        border-radius: 16px;
+        flex-wrap: wrap;
+        gap: 22px;
+        justify-content: space-between;
+        padding: 16px;
+    }
+    .logo-text {
+    display: none;
+}
+    .id-link {
+        color: #2563eb !important;
+    }
+section.activity-section {
+    padding: 0;
+    background-color: transparent;
+}
+.row-cell {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 45.5%;
+    gap: 8px;
+}
+.container {
+    max-width: 94% !important;
+}
+.container {
+    display: block;
+}
+.header {
+    margin-bottom: 16px;
+}
+.user-avatar img {
+    width: 44px;
+    height: 44px;
+}
+
+.notification-wrapper {
+    width: 44px;
+    height: 44px;
+}
+
+
+.notification-icon img {
+    width: 18px;
+}
+
+.notification-badge {
+    top: 12px;
+    right: 13px;
+    width: 6px;
+    height: 6px;
+}
+}
+@media screen and (max-width: 768px){
+
+.metric-value, .metric-value2 {
+    font-size: 32px;
+}
+
+    .metrics-grid {
+        gap: 22px;
+    }
+.performance-section {
+    padding: 16px;
+}
+.action-title, .section-title {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1184,6 +1184,29 @@ section.quote-conversion.performance-section {
 .quote-conversion {
     margin-bottom: 0;
 }
+.activity-section-mob-hd h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.activity-section-mob-hd button {
+    padding: 0;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+}
+.activity-section-mob-hd img {
+    width: 132%;
+    height: 132%;
+}
+.activity-section-mob-hd {
+    display: none;
+    align-items: anchor-center;
+    justify-content: space-between;
+}
+
+
 @media screen and (max-width: 1336px){
     .activity-header {
     display: block;
@@ -1265,6 +1288,9 @@ section.quote-conversion.performance-section {
     display: flex;
     margin-bottom: 16px;
 }
+.activity-section-mob-hd {
+    display: flex;
+}
 .welcome-widget {
         height: 260px;
         width: 36%;
@@ -1272,7 +1298,9 @@ section.quote-conversion.performance-section {
 .showin-result-ittle-info {
     display: none;
 }
-
+.activity-table {
+        margin-top: -12px;
+    }
 section.quote-conversion.performance-section {
     justify-content: space-between;
     display: flex;
@@ -1334,6 +1362,7 @@ section.quote-conversion.performance-section {
 section.activity-section {
     padding: 0;
     background-color: transparent;
+            margin-top: -12px;
 }
 .row-cell {
     font-family: 'Poppins', sans-serif;

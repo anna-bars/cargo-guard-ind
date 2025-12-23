@@ -1144,6 +1144,136 @@ section.process {
 }
 
 
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+/* 🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭🍭 */
+
+.cta {
+    margin-bottom: 72px;
+    padding: 72px 0;
+    border-radius: 16px;
+    background-image: url(./cta/back-img.png);
+    background-size: cover;
+    text-align: center;
+}
+.cta .mean-text {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cta-title {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    width: 52%;
+    margin: auto;
+    line-height: 64px;
+}
+.cta-subtitle {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    width: 38%;
+    margin: auto;
+}
+.cta-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cta-footer {
+    padding-top: 24px;
+}
+.cta-footer h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+.cta-main-btn {
+    color: black;
+    font-size: 16px;
+    padding: 12px 36px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.269);
+}
+.cta-second-btn {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-left: 32px;
+}
+@media screen and (max-width: 1220px) {
+    .cta-title {
+        font-size: 42px;
+        width: 64%;
+        line-height: 58px;
+    }
+    .cta-subtitle {
+        width: 56%;
+    }
+    .cta {
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .cta-title {
+        font-size: 36px;
+        width: 95%;
+        line-height: 50px;
+    }
+    .cta-subtitle {
+        width: 80%;
+    }
+    .cta-second-btn {
+        font-size: 16px;
+        margin-left: 22px;
+    }
+    .cta-main-btn {
+        padding: 10px 24px;
+    }
+} 
+@media screen and (max-width: 768px){
+    section.cta-sect .container {
+        width: 100%;
+    }
+    .cta .mean-text {
+        font-size: 14px;
+    }
+    .cta-title {
+        font-size: 32px;
+        width: 80%;
+        line-height: 44px;
+    }
+    .cta-second-btn {
+        display: none;
+    }
+}
 
 
 

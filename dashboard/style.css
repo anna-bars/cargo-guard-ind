@@ -264,7 +264,11 @@ body {
   display: inline-flex;
   align-items: flex-end;
 }
-
+.activity-mobile-header {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
 /* $ նշանը */
 .metric-value::before {
   content: "$";
@@ -272,6 +276,13 @@ body {
   top: 6px;
   left: -20px;
   font-size: 12px;
+}
+.activity-mobile-header h4 {
+    font-weight: 400;
+    font-size: 16px;
+}
+.activity-mobile-header {
+    display: none;
 }
 .metric-value2::before {
   content: "%";
@@ -1250,7 +1261,10 @@ section.quote-conversion.performance-section {
 .navigation {
     display: none;
 }
-
+.activity-mobile-header {
+    display: flex;
+    margin-bottom: 16px;
+}
 .welcome-widget {
         height: 260px;
         width: 36%;

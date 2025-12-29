@@ -1267,3 +1267,35 @@ html, body {
         left: 52%;
     }
 }
+
+
+
+
+.chart-div-item {
+    height: 24px;
+    background-color: #E2E3E4;
+}
+.chart-div-active-item {
+    height: 20px;
+    background-color: #EE9F66;
+}
+.chaart {
+    display: flex;
+    gap: 4px;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.chart-div-item,
+.chart-div-active-item {
+    width: 1px;
+    transform: scaleX(2);
+    transform-origin: left;
+}
+
+
+
+
+
+

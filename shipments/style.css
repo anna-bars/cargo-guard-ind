@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #f3f3f6;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 350px;
+  background-color: rgba(250, 252, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.36px;
+  line-height: normal;
+}
+
+.risk-score,
+.expiration-score {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.score-display {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.percentage-symbol {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.20px;
+  line-height: 12px;
+}
+
+.score-number {
+  font-size: 56px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 1.12px;
+  line-height: 36px;
+}
+
+.expiration-score .score-display {
+  align-items: center;
+}
+
+.expiration-score .score-display svg {
+  margin-top: 3px;
+}
+
+.score-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c7c7c7;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.risk-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #c7c7c7;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.risk-description .highlight {
+  font-weight: 500;
+  color: #afaeae;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.action-button span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3c3c3c;
+  letter-spacing: 0.32px;
+  line-height: normal;
+  text-align: left;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+.action-button:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.expiration-info,
+.total-policies {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c7c7c7;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+}
+
+.chart-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c7c7c7;
+  letter-spacing: 0.32px;
+}
+
+.chart-label-center {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.32px;
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 340px;
+  height: 28px;
+}
+
+.progress-track {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 340px;
+  height: 4px;
+  background-color: rgba(252, 220, 162, 0.5);
+  border-radius: 58px;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #FCDCA2;
+  border-radius: 58px;
+  transition: width 0.3s ease;
+}
+
+.gradient-bar {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 281px;
+  height: 16px;
+}
+
+.gradient-bar svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.triangle-pointer {
+  position: absolute;
+  top: -1px;
+  width: 27px;
+  height: 25px;
+  pointer-events: none;
+  transition: left 0.3s ease;
+}
+
+.triangle-pointer svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .card {
+    min-width: 100%;
+  }
+}

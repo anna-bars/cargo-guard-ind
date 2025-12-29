@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script defer src="./injectScript.js"></script>
+    <script defer src="./injectScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Policy Dashboard</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <div class="container">
+        <article class="card">
+          <h2 class="card-title">Reduce Policy Risk</h2>
+          <div class="risk-score">
+            <div class="score-display">
+              <span class="percentage-symbol">%</span>
+              <span class="score-number">88</span>
+            </div>
+            <span class="score-label">Policy Risk Score</span>
+          </div>
+          <p class="risk-description">
+            <span class="highlight">7</span> of your active policies are at risk due to <span class="highlight">Missing Documents</span>
+          </p>
+          <button class="action-button">
+            <span>View<br />Required Documents</span>
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="21" cy="21" r="21" fill="#000"/>
+              <path d="M21 15L27 21L21 27M27 21H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </article>
+
+        <article class="card">
+          <h2 class="card-title">Policy Expiration Timeline</h2>
+          <div class="expiration-score">
+            <div class="score-display">
+              <span class="percentage-symbol">%</span>
+              <span class="score-number">71</span>
+              <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 0L6 8H0L3 0Z" fill="#000"/>
+              </svg>
+            </div>
+            <span class="score-label">Policies</span>
+          </div>
+          <p class="expiration-info">Total expiring policies: 7</p>
+          
+          <div class="chart-container">
+            <div class="chart-labels">
+              <span class="chart-label">0%</span>
+              <span class="chart-label-center">50%</span>
+              <span class="chart-label">100%</span>
+            </div>
+            <div class="progress-wrapper">
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 71%"></div>
+              </div>
+              <div class="gradient-bar">
+                 <img src="bar.svg" alt="Gradient bar" />
+              </div>
+              <div class="triangle-pointer" style="left: calc(71% - 13.5px)">
+                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5 0L26.3253 24.75H0.674683L13.5 0Z" fill="#FCDCA2"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <p class="total-policies">Total policies: 22</p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

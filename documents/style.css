@@ -1,0 +1,302 @@
+/* Հիմնական կոնտեյներ */
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+  background-color: #fafcfc;
+}
+
+/* Ընդհանուր բլոկներ և խմբեր */
+.frame .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 318px;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame .group {
+  position: relative;
+  width: 161px;
+  height: 40px;
+}
+
+.frame .group-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 4px;
+  width: 76px;
+  height: 38px;
+}
+
+.frame .group-3 {
+  position: relative;
+  width: 348px;
+  height: 68px;
+}
+
+.frame .group-4 {
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+}
+
+/* .frame .group-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 348px;
+  height: 68px;
+} */
+
+/* Տեքստային ոճեր */
+.frame .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  line-height: normal;
+}
+
+.frame .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #c7c7c7;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  line-height: normal;
+}
+
+.frame .text-wrapper-2 {
+  width: 9px;
+  height: 12px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  letter-spacing: 0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+  margin-top: 2px;
+  width: 59px;
+  height: 36px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0.96px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 25px;
+  left: 91px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #c7c7c7;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #c7c7c7;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  line-height: normal;
+}
+
+/* Գրաֆիկական տարրեր (Progress bars, Rectangles, Images) */
+.frame .rectangle-wrapper {
+  display: flex;
+  width: 221px;
+  height: 24px;
+  margin-top: 6px;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(216, 228, 254, 0.52) 0%,
+    rgba(39, 100, 235, 0.35) 100%
+  );
+}
+
+.frame .rectangle {
+  width: 3px;
+  height: 18px;
+  margin-top: 3px;
+  margin-left: 215px;
+  background-color: #f6f8fa;
+  border-radius: 1px;
+}
+
+.frame .div-2, .frame .div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 348px;
+  height: 17px;
+  position: relative;
+}
+
+.frame .div-3 {
+  margin-top: 4px;
+}
+
+.frame .img {
+  position: absolute;
+  top: 26px;
+  left: 224px;
+  width: 124px;
+  height: 18px;
+}
+/* Տեքստային տարրեր */
+.frame .text-wrapper-3 {
+  margin-top: 2px;
+  width: 59px;
+  height: 36px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0.96px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 25px;
+  left: 91px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #c7c7c7;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+}
+
+.frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #c7c7c7;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  line-height: normal;
+}
+
+/* Խմբեր և կոնտեյներներ */
+.frame .group-3 {
+  position: relative;
+  width: 348px;
+  height: 68px;
+}
+
+/* .frame .group-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 348px;
+  height: 68px;
+  display: flex;
+} */
+
+
+
+.frame .div-2 {
+  width: 348px;
+  height: 17px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+.frame .div-3 {
+  width: 348px;
+  height: 17px;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+}
+
+/* Գրաֆիկական տարրեր և դիզայն */
+.frame .rectangle-wrapper {
+  width: 221px;
+  height: 24px;
+  margin-top: 6px;
+  display: flex;
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(216, 228, 254, 0.52) 0%,
+    rgba(39, 100, 235, 0.35) 100%
+  );
+}
+
+.frame .rectangle {
+  margin-top: 3px;
+  width: 3px;
+  height: 18px;
+  margin-left: 215px;
+  background-color: #f6f8fa;
+  border-radius: 1px;
+}
+
+.frame .img {
+  position: absolute;
+  top: 26px;
+  left: 224px;
+  width: 124px;
+  height: 18px;
+}
